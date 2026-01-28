@@ -37,4 +37,3 @@ for p in image_paths:
     x = preprocess_to_mnist_vector(str(p))
     pred = model.predict(x)[0]
     print(f"{p.name} -> predicted: {pred}")
-#h

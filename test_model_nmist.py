@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 # all img in folder 
 
 MODEL_PATH = r"D:\ML2-Final\saved_models\mnist_pca95_rf.joblib"
-TEST_DIR   = r"D:\ML2-Final\test_images"
+TEST_DIR   = r"D:\ML2-Final\mnist_test_png"
 
 model = joblib.load(MODEL_PATH)
 

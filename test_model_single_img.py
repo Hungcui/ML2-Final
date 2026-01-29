@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 MODEL_PATH = r"D:\ML2-Final\saved_models\mnist_pca95_rf.joblib"
-TEST_DIR   = r"D:\ML2-Final\test_images"
+TEST_DIR   = r"D:\ML2-Final\test_images\39_05770.png"
 
 model = joblib.load(MODEL_PATH)
 
@@ -26,7 +26,7 @@ def preprocess_to_mnist_vector(img_path: str) -> np.ndarray:
     x = arr.reshape(1, -1)                           # (1, 784)
     return x
 
-img_path = r"D:\ML2-Final\test_images\your_image.png"
+img_path = r"D:\ML2-Final\test_images\39_05770.png"
 x = preprocess_to_mnist_vector(img_path)
 print("Predicted digit:", model.predict(x)[0])
 
